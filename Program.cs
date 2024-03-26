@@ -24,32 +24,51 @@ do
         Console.WriteLine("Choose the ticket you want to view");
         Console.WriteLine("1) View Ticket");
         Console.WriteLine("2) View Enhancement");
-        Console.WriteLine("3) View Task"); 
-        
-         resp = Console.ReadLine();
-        
+        Console.WriteLine("3) View Task");
 
-        if(resp == "1"){    
-        if (File.Exists(file))
+        resp = Console.ReadLine();
+
+
+        if (resp == "1")
         {
-
-            StreamReader sr = new StreamReader(file);
-
-            while (!sr.EndOfStream)
+            if (File.Exists(file))
             {
 
-                string newPerson = sr.ReadLine();
+                StreamReader sr = new StreamReader(file);
 
-                Console.WriteLine(newPerson);
+                while (!sr.EndOfStream)
+                {
 
+                    string newPerson = sr.ReadLine();
+
+                    Console.WriteLine(newPerson);
+
+                }
+                sr.Close();
             }
-            sr.Close();
         }
-     }
+        if (resp == "2")
+        {
+            if (File.Exists(EnhancementFile))
+            {
+
+                StreamReader sr = new StreamReader(EnhancementFile);
+
+                while (!sr.EndOfStream)
+                {
+
+                    string newTicket = sr.ReadLine();
+
+                    Console.WriteLine(newTicket);
+
+                }
+                sr.Close();
+            }
+        }
     }
 
 
-}while (Ticket.choice == "1" || Ticket.choice == "2" || Ticket.choice == "3" || Ticket.choice == "4");
+} while (Ticket.choice == "1" || Ticket.choice == "2" || Ticket.choice == "3" || Ticket.choice == "4");
 
 
 
