@@ -1,4 +1,20 @@
 ﻿
+string file = "ticketData.txt";
+string EnhancementFile = "EnhancementData.txt";
+string taskFile = "taskData.txt";
+ticket Ticket = new ticket();
+Enhancement enhancement = new Enhancement();
+Task task = new Task();
+string resp;
+
+
+
+
+
+
+
+
+
 public class ticket
 {
 
