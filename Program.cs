@@ -18,7 +18,19 @@ do
 
     Ticket.choice = Console.ReadLine();
 
-    
+
+    if (Ticket.choice == "1")
+    {
+        Console.WriteLine("Choose the ticket you want to view");
+        Console.WriteLine("1) View Ticket");
+        Console.WriteLine("2) View Enhancement");
+        Console.WriteLine("3) View Task"); 
+        
+         resp = Console.ReadLine();
+        
+    }
+
+
 }while (Ticket.choice == "1" || Ticket.choice == "2" || Ticket.choice == "3" || Ticket.choice == "4");
 
 
