@@ -28,6 +28,24 @@ do
         
          resp = Console.ReadLine();
         
+
+        if(resp == "1"){    
+        if (File.Exists(file))
+        {
+
+            StreamReader sr = new StreamReader(file);
+
+            while (!sr.EndOfStream)
+            {
+
+                string newPerson = sr.ReadLine();
+
+                Console.WriteLine(newPerson);
+
+            }
+            sr.Close();
+        }
+     }
     }
 
 
