@@ -88,8 +88,29 @@ do
         }
 
     }
+    if (Ticket.choice == "2")
+    {
+        StreamWriter sw = new StreamWriter(file);
+
+        for (int i = 0; i < 7; i++)
+        {
+            Console.WriteLine("Enter Ticket (Y/N)?");
+
+             resp = Console.ReadLine();
+
+            if (resp != "Y") { break; }
 
 
+          }
+        sw.Close();    
+    }
+
+
+
+
+
+
+    
 } while (Ticket.choice == "1" || Ticket.choice == "2" || Ticket.choice == "3" || Ticket.choice == "4");
 
 
