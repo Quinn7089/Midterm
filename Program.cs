@@ -215,6 +215,44 @@ do
 
             if (resp != "Y") { break; }
 
+            Console.WriteLine("Enter Ticket ID:");
+
+            task.TicketID = Console.ReadLine();
+
+            Console.WriteLine("Enter Summary:");
+
+            task.Summary = Console.ReadLine();
+
+            Console.WriteLine("Enter Status:");
+
+            task.Status = Console.ReadLine();
+
+            Console.WriteLine("Enter priority:");
+
+            task.Priority = Console.ReadLine();
+
+            Console.WriteLine("Enter Submitter:");
+
+            task.Submitter = Console.ReadLine();
+
+            Console.WriteLine("Enter assigend:");
+
+            task.Assigned= Console.ReadLine();
+
+
+            Console.WriteLine("Enter watching:");
+
+            task.Watching = Console.ReadLine();
+
+            Console.WriteLine("Enter Project name:");
+
+            task.Name = Console.ReadLine();
+
+            Console.WriteLine("Enter Due date");
+
+            task.DueDate = Console.ReadLine();
+       
+
 
     sw.Close();
     }   
