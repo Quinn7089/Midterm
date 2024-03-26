@@ -65,6 +65,28 @@ do
                 sr.Close();
             }
         }
+        if (resp == "3")
+        {
+            if (File.Exists(taskFile))
+            {
+
+                StreamReader sr = new StreamReader(taskFile);
+
+                while (!sr.EndOfStream)
+                {
+
+                    string newTask = sr.ReadLine();
+
+                    Console.WriteLine(newTask);
+
+                }
+                sr.Close();
+            }
+
+
+
+        }
+
     }
 
 
