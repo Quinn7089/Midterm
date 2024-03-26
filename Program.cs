@@ -252,7 +252,9 @@ do
 
             task.DueDate = Console.ReadLine();
        
-
+       
+           sw.WriteLine(task.TicketID + ", " + task.Summary + ", " + task.Status + ", " + task.Priority + ", "
+            + task.Submitter + ", " + task.Assigned + ", " + task.Watching + ", " + task.Name + ", " + task.DueDate);
 
     sw.Close();
     }   
