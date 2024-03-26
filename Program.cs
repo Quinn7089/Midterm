@@ -148,6 +148,52 @@ do
 
             if (resp != "Y") { break; }
 
+            
+            Console.WriteLine("Enter Ticket ID:");
+
+            enhancement.TicketID = Console.ReadLine();
+            
+             Console.WriteLine("Enter Summary:");
+
+            enhancement.Summary = Console.ReadLine();
+
+            Console.WriteLine("Enter Status:");
+
+            enhancement.Status = Console.ReadLine();
+
+            Console.WriteLine("Enter priority:");
+
+            enhancement.Priority = Console.ReadLine();
+
+            Console.WriteLine("Enter Submitter:");
+
+            enhancement.Submitter = Console.ReadLine();
+
+            Console.WriteLine("Enter assigend:");
+
+            enhancement.Assigned = Console.ReadLine();
+
+
+            Console.WriteLine("Enter watching:");
+
+            enhancement.Watching = Console.ReadLine();
+
+            Console.WriteLine("Enter SoftWare");
+
+            enhancement.Software = Console.ReadLine();
+
+            Console.WriteLine("Enter Cost");
+
+            enhancement.Cost = Console.ReadLine();
+
+            Console.WriteLine("Enter Reason");
+
+            enhancement.Reason = Console.ReadLine();
+
+            Console.WriteLine("Enter estimate");
+
+            enhancement.Estimate = Console.ReadLine();
+
 
          }
         sw.Close();
