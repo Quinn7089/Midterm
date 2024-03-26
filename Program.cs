@@ -136,10 +136,24 @@ do
           }
         sw.Close();    
     }
+   if (Ticket.choice == "3")
+    {
+      StreamWriter sw = new StreamWriter(EnhancementFile);
+  
+         for (int i = 0; i < 7; i++){
+         
+          Console.WriteLine("Enter Enhancement (Y/N)?");
+
+             resp = Console.ReadLine();
+
+            if (resp != "Y") { break; }
 
 
+         }
+        sw.Close();
 
 
+    }
 
 
 
