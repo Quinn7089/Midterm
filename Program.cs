@@ -194,7 +194,10 @@ do
 
             enhancement.Estimate = Console.ReadLine();
 
-
+            sw.WriteLine(enhancement.TicketID + ", " + enhancement.Summary + ", " + enhancement.Status + ", " + enhancement.Priority
+             + ", " + enhancement.Submitter + ", " + enhancement.Assigned + ", " + enhancement.Watching + ", " + 
+            enhancement.Software + ", " + enhancement.Cost + ", " + enhancement.Reason + ", " + enhancement.Estimate);
+             
          }
         sw.Close();
 
