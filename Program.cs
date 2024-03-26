@@ -7,7 +7,19 @@ Enhancement enhancement = new Enhancement();
 Task task = new Task();
 string resp;
 
+do
+{
+    Console.WriteLine("1) Read Data from file.");
+    Console.WriteLine("2) Create Ticket.csv");
+    Console.WriteLine("3) Create Enhancement.csv");
+    Console.WriteLine("4) Create Task.csv");
+    Console.WriteLine("Enter any other key to exit");
 
+
+    Ticket.choice = Console.ReadLine();
+
+    
+}while (Ticket.choice == "1" || Ticket.choice == "2" || Ticket.choice == "3" || Ticket.choice == "4");
 
 
 
